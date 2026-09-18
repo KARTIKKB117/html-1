@@ -1,0 +1,115 @@
+<html>
+    <head></head>
+    <body>
+        <h2> Image Slider</h2>
+        <img id = "image" src = "smokey.jpg" >
+        <br> <br>
+        <button onclick="previous()">Previous</button>
+        <button onclick="next()">Next</button>
+        <script>
+            let images = ["H440.avif", "smokey.jpg", "car1.jpeg"];
+            let i = 0;
+            function next() {
+                i++;
+                if (i >= images.length) {
+                    i = 0;
+                }
+                document.getElementById("image").src = images[i];
+            }
+            function previous() {
+                i--;
+                if (i < 0) {
+                    i = images.length - 1;
+                }
+                document.getElementById("image").src = images[i];
+          
+            }
+            setInterval(next, 3000);
+        </script>
+    </body>
+</html>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+    <head>
+        <title> Image slider </title>
+    </head>
+<body>
+    <h1>Image slider </h1>
+    <img id="images" src ="smokey.jpg">
+    <br><br>
+    <button onclick ="previous()">Previous </button>
+    <button onclick="next()">Next</button>
+    <script>
+    let images =["car1.jpeg", "smokey.jpg","H440.avif"];
+    let i=0;
+    function next (){
+        i++;
+        if (i== images.length){
+            i=0;
+        }
+        document.getElementsById("image").src = images[i];
+    }
+    function previous() {
+        i--;
+
+        if (i<0){
+            i= images.length - 1;
+        }
+        document.getElementById("image").src = images[i];
+    }
+    setInterval(next,3000);
+</script>
+        </body>
+    </html>
+     -->
